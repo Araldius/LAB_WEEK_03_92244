@@ -8,6 +8,10 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 
+interface CoffeeListener {
+    fun onSelected(id: Int)
+}
+
 class ListFragment : Fragment(), View.OnClickListener {
 
     private var param1: String? = null
